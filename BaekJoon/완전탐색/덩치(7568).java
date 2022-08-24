@@ -20,6 +20,9 @@ public class Main {
         for (int i = 0; i < N; i++) {
             int cnt = 1; // rank는 1부터 시작
             for (int j = 0; j < N; j++) {
+                if (i == j) // 같은 경우 생략
+                    continue;
+
                 if (arr[i][0] < arr[j][0] && arr[i][1] < arr[j][1]) { // 몸무게, 키 비교
                     cnt++;
                 }
