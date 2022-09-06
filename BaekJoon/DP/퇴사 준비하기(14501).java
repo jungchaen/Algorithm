@@ -9,9 +9,9 @@ public class Main {
         int n=Integer.parseInt(br.readLine());
         StringTokenizer st;
 
-        int[] D=new int[n+2];  //DP테이블, 퇴사일이 n+1일, 배열은 0부터 시작하는데 문제에서 1일부터 시작
         int[] T=new int[n+1]; //1일부터 시작이니깐
         int[] P=new int[n+1];
+        int[] D=new int[n+2];  //DP테이블, 퇴사일이 n+1일, 배열은 0부터 시작하는데 문제에서 1일부터 시작
         //D[0]=t[0]=p[0]=0;  이걸 할 필요가 없는게 배열 객체는 원래 생성하면 모든 인덱스의 값을 0으로 초기화
         for(int i=1;i<=n;i++){
             st=new StringTokenizer(br.readLine());
